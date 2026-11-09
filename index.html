@@ -107,6 +107,11 @@ section{padding:96px 0}
   display:grid;grid-template-columns:1fr 1fr;gap:10px;border-radius:0;overflow:visible
 }
 .day-photo.two img{border-radius:3px}
+.day-photo.feature-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;border-radius:0;overflow:visible}
+.day-photo.feature-pair figure{margin:0;min-width:0}
+.day-photo.feature-pair img{aspect-ratio:4/3;object-fit:cover;border-radius:3px}
+.day-photo.feature-pair figcaption{font-size:.85rem;color:var(--sea);margin-top:8px}
+
 .day-photo.split{
   display:grid;grid-template-columns:1.38fr .62fr;gap:10px;border-radius:0;overflow:visible
 }
@@ -216,7 +221,7 @@ section{padding:96px 0}
   section{padding:58px 0}
   .hero{min-height:82vh}.hero .wrap{padding:92px 0 50px}
   h1{font-size:3.7rem}
-  .facts,.day-photo.two,.day-photo.split,.activity-grid,.dining-links{grid-template-columns:1fr}
+  .facts,.day-photo.two,.day-photo.feature-pair,.day-photo.split,.activity-grid,.dining-links{grid-template-columns:1fr}
   .day-photo.split .side{grid-template-columns:1fr 1fr}
   .day{padding-bottom:82px}
   .day::after{bottom:40px}
@@ -357,14 +362,14 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Su Va Na underwater fine dining restaurant" src="assets/suvana.webp" width="1400" height="1400" loading="lazy" decoding="async"/></div>
+<div class="day-photo feature-pair"><figure><img alt="Su Va Na underwater fine dining restaurant" src="assets/suvana.webp" width="1400" height="1400" loading="lazy" decoding="async"/><figcaption>Lunch at Su Va Na</figcaption></figure><figure><img alt="Immersive digital art at MAYA Media Art Museum Phuket" src="assets/maya.webp" width="960" height="640" loading="lazy" decoding="async"/><figcaption>MAYA Media Art Museum</figcaption></figure></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Monday</div><div class="num">January 18</div></div>
-<div class="day-text"><div class="kicker">Central Phuket + special dinner</div><h3>Su Va Na underwater fine dining</h3>
-<div class="meta"><span>Central Phuket</span><span>~30–35 min drive</span><span>7 PM dinner</span></div>
-<p><b>Su Va Na is not the aquarium.</b> It is a separate, highly rated fine-dining restaurant with an underwater setting, known for its food and atmosphere. During the day we can do Central Mall, Aquaria, MAYA and — if useful — OTO Play Park before dinner.</p>
-<details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Daytime</time><div>Central Phuket, Aquaria, MAYA, optional OTO Play Park.</div></div><div class="row"><time>7:00 PM</time><div>Su Va Na dinner reservation.</div></div></div></details>
-<div class="supporting-photos two"><figure><img alt="Central Phuket Floresta skywalk" src="assets/central.webp" width="800" height="451" loading="lazy" decoding="async"/><figcaption>Central Phuket</figcaption></figure><figure><img alt="Immersive digital art at MAYA Media Art Museum Phuket" src="assets/maya.webp" width="960" height="640" loading="lazy" decoding="async"/><figcaption>MAYA Media Art Museum</figcaption></figure></div>
+<div class="day-text"><div class="kicker">A daytime outing at Central Phuket</div><h3>Central Mall, Aquaria + MAYA</h3>
+<div class="meta"><span>Central Phuket</span><span>~30–35 min drive</span><span>Su Va Na for lunch</span></div>
+<p>We’ll spend the day at <b>Central Mall</b>, explore <b>Aquaria</b> and <b>MAYA Media Art Museum</b>, then enjoy lunch at <b>Su Va Na</b>, the separate underwater fine-dining restaurant. If Sparrow needs to burn off some energy, we can stop at <b>OTO Play Park</b> in the mall.</p>
+<details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Explore</time><div>Central Mall, Aquaria and MAYA Media Art Museum.</div></div><div class="row"><time>Lunch</time><div>Su Va Na underwater fine dining.</div></div><div class="row"><time>Optional</time><div>OTO Play Park at the mall if Sparrow needs to burn off some energy.</div></div></div></details>
+<div class="supporting-photos"><figure><img alt="Central Phuket Floresta skywalk" src="assets/central.webp" width="800" height="451" loading="lazy" decoding="async"/><figcaption>Central Phuket</figcaption></figure></div>
 <div class="baby"><b>Children under 7:</b> Su Va Na provides a supervised play area only steps from the table. A certified nanny supervises the child and can bring them to and from the parents’ table as needed. This service is mandatory for children under 7 and costs <b>1,500 THB per child</b>.</div>
 <div class="links"><a class="button primary" href="https://suvanaphuket.com/" target="_blank">Restaurant details ↗</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Su+Va+Na+Phuket" target="_blank">Map ↗</a></div>
 </div>
@@ -382,16 +387,16 @@ section{padding:96px 0}
 </article>
 <article class="day">
 <div class="day-photo split">
-<img alt="Bird's nest seating at Three Monkeys" src="assets/birdsnest.webp" width="1800" height="1012" loading="lazy" decoding="async"/>
+<img alt="Bird's nest seating at Three Monkeys" src="assets/birdsnest.webp" width="1800" height="1200" loading="lazy" decoding="async"/>
 <div class="side"><img alt="Passionfruit drink at Three Monkeys" src="assets/drink.webp" width="500" height="500" loading="lazy" decoding="async"/><img alt="Wanon BBQ half chicken at Three Monkeys" src="assets/chicken.webp" width="500" height="500" loading="lazy" decoding="async"/></div>
 </div>
 <div class="day-copy">
 <div class="date"><div class="dow">Wednesday</div><div class="num">January 20</div></div>
-<div class="day-text"><div class="kicker">Wildlife + lunch</div><h3>Bukit Elephant Park + Three Monkeys</h3>
+<div class="day-text"><div class="kicker">Wildlife + lunch</div><h3>Bukit Elephant Park + 3 Monkeys Restaurant</h3>
 <div class="meta"><span>1.5-hour elephant visit</span><span>~35–40 min from resort</span><span>~13 min to lunch</span></div>
-<p>We’ll do the short experience at <b>Bukit Elephant Park</b> in the morning, then drive to <b>Three Monkeys</b> for lunch in one of the bird’s nest tables.</p>
-<details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Morning</time><div>Bukit Elephant Park short program.</div></div><div class="row"><time>Afterward</time><div>About 13 minutes to Three Monkeys.</div></div><div class="row"><time>Lunch</time><div>Bird’s nest seating in the jungle setting.</div></div></div></details>
-<div class="links"><a class="button primary" href="https://bukitelephantpark.com/" target="_blank">Bukit Elephant Park ↗</a><a class="button" href="https://threemonkeysphuket.com/" target="_blank">Three Monkeys ↗</a></div>
+<p>We’ll do the short experience at <b>Bukit Elephant Park</b> in the morning, then drive to <b>3 Monkeys Restaurant</b> for lunch. We have the option to eat in one of the bird’s nest tables, tucked into the tropical greenery.</p>
+<details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Morning</time><div>Bukit Elephant Park short program.</div></div><div class="row"><time>Afterward</time><div>About 13 minutes to 3 Monkeys Restaurant.</div></div><div class="row"><time>Lunch</time><div>Optional bird’s nest seating in the jungle setting.</div></div></div></details>
+<div class="links"><a class="button primary" href="https://bukitelephantpark.com/" target="_blank">Bukit Elephant Park ↗</a><a class="button" href="https://threemonkeysphuket.com/" target="_blank">3 Monkeys Restaurant ↗</a></div>
 <div class="supporting-photos"><img alt="Elephant at Bukit Elephant Park" src="assets/elephant.webp" width="720" height="480" loading="lazy" decoding="async"/></div>
 </div>
 </div>
