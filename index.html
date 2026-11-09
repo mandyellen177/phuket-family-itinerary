@@ -72,6 +72,19 @@ nav .brand{
   font-size:1.15rem;color:var(--ink)
 }
 
+.hero-links .button{border-color:rgba(255,255,255,.65);color:#fff;background:rgba(8,25,31,.2)}
+.hero-links .button:hover{background:rgba(8,25,31,.5)}
+.overview{padding:48px 0;scroll-margin-top:56px}
+.overview-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}
+.overview-heading h2{font-size:clamp(2rem,3.5vw,3rem);line-height:1.05}.overview-heading p{font-size:.8rem;color:var(--muted);margin:0}
+.overview-list{display:grid;grid-template-rows:repeat(8,auto);grid-auto-flow:column;grid-template-columns:1fr 1fr;column-gap:36px;list-style:none;padding:0;margin:0}
+.overview-list li{min-width:0;border-bottom:1px solid var(--line)}
+.overview-list a{display:grid;grid-template-columns:60px minmax(0,1fr);gap:10px;padding:9px 2px;text-decoration:none;font-size:.88rem;line-height:1.4}
+.overview-list a:hover,.overview-list a:focus-visible{background:rgba(74,119,129,.09)}
+.overview-date{font-weight:750;color:var(--sea);white-space:nowrap}.overview-note{font-size:.73rem;color:var(--muted);margin-top:14px}
+.day[id]{scroll-margin-top:76px}.overview-nav{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:680px){nav .wrap{gap:14px}nav a{font-size:.73rem}.overview{padding:24px 0;scroll-margin-top:48px}.overview-heading{display:block;margin-bottom:12px}.overview-heading h2{font-size:1.9rem}.overview-heading .eyebrow{font-size:.6rem}.overview-heading p{font-size:.7rem;margin-top:7px}.overview-list{display:block}.overview-list a{grid-template-columns:48px minmax(0,1fr);gap:6px;padding:5px 1px;font-size:.76rem;line-height:1.3}.overview-note{font-size:.65rem;line-height:1.35;margin-top:10px}}
+
 section{padding:96px 0}
 .intro{display:grid;grid-template-columns:1.08fr .92fr;gap:74px;align-items:start}
 .intro p{font-size:1.04rem;color:var(--muted);max-width:690px}
@@ -260,6 +273,9 @@ section{padding:96px 0}
   .logistics[open] .schedule{display:block}
   section{padding:34px 0}
 }
+@media(max-width:960px){section.overview{padding:38px 0}}
+@media(max-width:680px){section.overview{padding:20px 0}}
+@media(max-width:360px){section.overview{padding:16px 0}.overview-heading h2{font-size:1.6rem}.overview-heading{margin-bottom:8px}.overview-list a{font-size:.7rem;padding:4px 1px;grid-template-columns:44px minmax(0,1fr);gap:5px}.overview-note{font-size:.6rem;margin-top:8px}nav .wrap{gap:10px}nav a{font-size:.7rem}}
 </style>
 </head>
 <body>
@@ -268,12 +284,14 @@ section{padding:96px 0}
 <div class="eyebrow" style="color:#d8edf0">Sri Panwa · Cape Panwa · Phuket</div>
 <h1>Our Phuket Family Holiday</h1>
 <p>Two weeks at Sri Panwa with family — slow mornings, beautiful meals, a few unforgettable Phuket outings, and plenty of time to simply enjoy being together.</p>
+<div class="links hero-links"><a class="button" href="#overview">See the whole trip at a glance ↓</a></div>
 <div class="badges"><span>January 11–25, 2027</span><span>Sri Panwa · Cape Panwa</span><span>Family holiday</span></div>
 </div>
 </header>
 <nav>
 <div class="wrap">
 <a class="brand" href="#top">Phuket Together</a>
+<a class="overview-nav" href="#overview">At a glance</a>
 <a href="#dining">Dining</a>
 <a href="#resort">Daily activities</a>
 <a href="#itinerary">Itinerary</a>
@@ -281,6 +299,29 @@ section{padding:96px 0}
 </div>
 </nav>
 <main>
+<section class="overview band" id="overview" aria-labelledby="overview-title">
+<div class="wrap">
+<div class="overview-heading"><div><div class="eyebrow">January 11–25, 2027</div><h2 id="overview-title">The whole trip at a glance</h2></div><p>Tap any day for its detailed plan.</p></div>
+<ol class="overview-list" aria-label="Daily itinerary overview">
+<li><a href="#day-jan-11"><span class="overview-date"><time datetime="2027-01-11">Mon 11</time></span><span>Gail &amp; Lyons arrive, settle in</span></a></li>
+<li><a href="#day-jan-12"><span class="overview-date"><time datetime="2027-01-12">Tue 12</time></span><span>Resort &amp; spa day</span></a></li>
+<li><a href="#day-jan-13"><span class="overview-date"><time datetime="2027-01-13">Wed 13</time></span><span>Distillery + Kan Eang seafood lunch (Gail &amp; Lyons)</span></a></li>
+<li><a href="#day-jan-14"><span class="overview-date"><time datetime="2027-01-14">Thu 14</time></span><span>Scott &amp; Sheila arrive; optional Chillva at 5 PM</span></a></li>
+<li><a href="#day-jan-15"><span class="overview-date"><time datetime="2027-01-15">Fri 15</time></span><span>Cooking class #1</span></a></li>
+<li><a href="#day-jan-16"><span class="overview-date"><time datetime="2027-01-16">Sat 16</time></span><span>Siam Niramit · evening</span></a></li>
+<li><a href="#day-jan-17"><span class="overview-date"><time datetime="2027-01-17">Sun 17</time></span><span>Blue Elephant, Old Town + Walking Street</span></a></li>
+<li><a href="#day-jan-18"><span class="overview-date"><time datetime="2027-01-18">Mon 18</time></span><span>Aquaria, MAYA + OTO; Su Va Na dinner · 7 PM</span></a></li>
+<li><a href="#day-jan-19"><span class="overview-date"><time datetime="2027-01-19">Tue 19</time></span><span>Leisure day</span></a></li>
+<li><a href="#day-jan-20"><span class="overview-date"><time datetime="2027-01-20">Wed 20</time></span><span>Elephants + 3 Monkeys lunch; farewell dinner</span></a></li>
+<li><a href="#day-jan-21"><span class="overview-date"><time datetime="2027-01-21">Thu 21</time></span><span>Cooking #2 · noon; Gail &amp; Lyons → airport ~8 PM*</span></a></li>
+<li><a href="#day-jan-22"><span class="overview-date"><time datetime="2027-01-22">Fri 22</time></span><span>Leisure / spa / resort</span></a></li>
+<li><a href="#day-jan-23"><span class="overview-date"><time datetime="2027-01-23">Sat 23</time></span><span>Leisure / spa / resort</span></a></li>
+<li><a href="#day-jan-24"><span class="overview-date"><time datetime="2027-01-24">Sun 24</time></span><span>Leisure / spa / resort</span></a></li>
+<li><a href="#day-jan-25"><span class="overview-date"><time datetime="2027-01-25">Mon 25</time></span><span>Scott &amp; Sheila depart</span></a></li>
+</ol>
+<p class="overview-note">* Gail &amp; Lyons’ flight departs at 12:25 AM on January 22, just after midnight.</p>
+</div>
+</section>
 <section>
 <div class="wrap intro">
 <div>
@@ -333,7 +374,7 @@ section{padding:96px 0}
 <div><div class="eyebrow">Day by day</div><h2>Our itinerary</h2></div>
 <p>A relaxed rhythm of resort time, food, culture and a few special outings — with the practical details tucked away when you need them.</p>
 </div>
-<article class="day">
+<article class="day" id="day-jan-11">
 <div class="day-photo"><img alt="Our Sri Panwa villa" src="assets/villa.webp" width="1024" height="699" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Monday</div><div class="num">January 11</div></div>
@@ -344,7 +385,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-12">
 <div class="day-photo"><img alt="Sri Panwa pool and tropical view" src="assets/resort_pool.webp" width="1280" height="853" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Tuesday</div><div class="num">January 12</div></div>
@@ -354,8 +395,8 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day"><div class="outing-options"><div class="outing-option"><img alt="Behind the scenes at The Distillery Phuket" src="assets/distillery-visit.webp" width="600" height="404" loading="lazy" decoding="async"/><div class="option-copy"><div class="eyebrow">Option 1 · guided tour</div><h4>Distillery Visit</h4><p>A welcome mojito, a behind-the-scenes visit through the sugarcane garden and French copper still, and a tasting of nine spirits: six rums, two gins and one vodka.</p><div class="meta"><span>590 THB per person</span><span>1 hour</span></div><a class="button" href="https://thedistilleryphuket.com/activities/distillery-visit" target="_blank" rel="noopener">Visit details ↗</a></div></div><div class="outing-option"><img alt="Chalong Bay rum cocktail workshop at The Distillery Phuket" src="assets/distillery-workshop.webp" width="960" height="1200" loading="lazy" decoding="async"/><div class="option-copy"><div class="eyebrow">Option 2 · hands-on workshop</div><h4>Mini Rum Cocktail Workshop</h4><p>Make and sip two Chalong Bay rum cocktails at your own fully stocked station. Includes a guided tour and the nine-flavour tasting: six rums, two gins and one vodka.</p><div class="meta"><span>990 THB per person</span><span>1.5 hours</span><span>2 PM daily</span></div><a class="button" href="https://thedistilleryphuket.com/activities/cocktail-workshop" target="_blank" rel="noopener">Workshop details ↗</a></div></div></div><div class="day-copy"><div class="date"><div class="dow">Wednesday</div><div class="num">January 13</div></div><div class="day-text"><div class="kicker">Gail &amp; Lyons · Chalong Bay outing</div><h3>The Distillery Phuket + Kan Eang seafood lunch</h3><div class="meta"><span>Two distillery options</span><span>Lunch on Chalong Bay</span></div><p>A day out for Gail &amp; Lyons: visit <b>The Distillery Phuket, home of Chalong Bay Rum</b>, and enjoy a seafood lunch at <b>Kan Eang @ Pier</b>. Choose the guided Distillery Visit or the Mini Rum Cocktail Workshop above.</p><details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Tour option</time><div>Book a Distillery Visit slot that leaves time for Kan Eang lunch afterward.</div></div><div class="row"><time>2 PM option</time><div>If we choose the Mini Rum Cocktail Workshop, have an earlier Kan Eang lunch first, then head to the distillery for the 2–3:30 PM workshop.</div></div></div></details><div class="restaurant-story"><p><b>Kan Eang @ Pier, Chalong Bay.</b> A true Phuket institution, one of the island’s oldest and most famous seafood restaurants, going strong for about 50 years and rated 4.5 stars across thousands of reviews. You sit right on the bay under the trees, pick your catch from the live tanks, and watch the boats come in. The reputation rests on decades of fresh, consistent seafood and generous plates: whole fish grilled in salt, garlic prawns, chili crab, steamed shellfish, with a full menu of non-seafood Thai dishes so everyone is covered.</p></div><figure class="seafood-photo"><a href="https://kaneang-pier.com/food-menu" target="_blank" rel="noopener"><span class="kan-menu-crop"><img alt="Kan Eang lobster four ways: garlic butter, white wine cream, Thermidor, and cashew nuts with dried chili" src="assets/kaneang-lobster.webp" width="941" height="2000" loading="lazy" decoding="async"/></span></a><figcaption>Kan Eang’s lobster menu · four ways to enjoy the catch.</figcaption></figure><div class="links"><a class="button primary" href="https://thedistilleryphuket.com/" target="_blank" rel="noopener">The Distillery Phuket ↗</a><a class="button" href="https://kaneang-pier.com/food-menu" target="_blank" rel="noopener">Kan Eang menu ↗</a></div></div></div></article>
-<article class="day">
+<article class="day" id="day-jan-13"><div class="outing-options"><div class="outing-option"><img alt="Behind the scenes at The Distillery Phuket" src="assets/distillery-visit.webp" width="600" height="404" loading="lazy" decoding="async"/><div class="option-copy"><div class="eyebrow">Option 1 · guided tour</div><h4>Distillery Visit</h4><p>A welcome mojito, a behind-the-scenes visit through the sugarcane garden and French copper still, and a tasting of nine spirits: six rums, two gins and one vodka.</p><div class="meta"><span>590 THB per person</span><span>1 hour</span></div><a class="button" href="https://thedistilleryphuket.com/activities/distillery-visit" target="_blank" rel="noopener">Visit details ↗</a></div></div><div class="outing-option"><img alt="Chalong Bay rum cocktail workshop at The Distillery Phuket" src="assets/distillery-workshop.webp" width="960" height="1200" loading="lazy" decoding="async"/><div class="option-copy"><div class="eyebrow">Option 2 · hands-on workshop</div><h4>Mini Rum Cocktail Workshop</h4><p>Make and sip two Chalong Bay rum cocktails at your own fully stocked station. Includes a guided tour and the nine-flavour tasting: six rums, two gins and one vodka.</p><div class="meta"><span>990 THB per person</span><span>1.5 hours</span><span>2 PM daily</span></div><a class="button" href="https://thedistilleryphuket.com/activities/cocktail-workshop" target="_blank" rel="noopener">Workshop details ↗</a></div></div></div><div class="day-copy"><div class="date"><div class="dow">Wednesday</div><div class="num">January 13</div></div><div class="day-text"><div class="kicker">Gail &amp; Lyons · Chalong Bay outing</div><h3>The Distillery Phuket + Kan Eang seafood lunch</h3><div class="meta"><span>Two distillery options</span><span>Lunch on Chalong Bay</span></div><p>A day out for Gail &amp; Lyons: visit <b>The Distillery Phuket, home of Chalong Bay Rum</b>, and enjoy a seafood lunch at <b>Kan Eang @ Pier</b>. Choose the guided Distillery Visit or the Mini Rum Cocktail Workshop above.</p><details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Tour option</time><div>Book a Distillery Visit slot that leaves time for Kan Eang lunch afterward.</div></div><div class="row"><time>2 PM option</time><div>If we choose the Mini Rum Cocktail Workshop, have an earlier Kan Eang lunch first, then head to the distillery for the 2–3:30 PM workshop.</div></div></div></details><div class="restaurant-story"><p><b>Kan Eang @ Pier, Chalong Bay.</b> A true Phuket institution, one of the island’s oldest and most famous seafood restaurants, going strong for about 50 years and rated 4.5 stars across thousands of reviews. You sit right on the bay under the trees, pick your catch from the live tanks, and watch the boats come in. The reputation rests on decades of fresh, consistent seafood and generous plates: whole fish grilled in salt, garlic prawns, chili crab, steamed shellfish, with a full menu of non-seafood Thai dishes so everyone is covered.</p></div><figure class="seafood-photo"><a href="https://kaneang-pier.com/food-menu" target="_blank" rel="noopener"><span class="kan-menu-crop"><img alt="Kan Eang lobster four ways: garlic butter, white wine cream, Thermidor, and cashew nuts with dried chili" src="assets/kaneang-lobster.webp" width="941" height="2000" loading="lazy" decoding="async"/></span></a><figcaption>Kan Eang’s lobster menu · four ways to enjoy the catch.</figcaption></figure><div class="links"><a class="button primary" href="https://thedistilleryphuket.com/" target="_blank" rel="noopener">The Distillery Phuket ↗</a><a class="button" href="https://kaneang-pier.com/food-menu" target="_blank" rel="noopener">Kan Eang menu ↗</a></div></div></div></article>
+<article class="day" id="day-jan-14">
 <div class="day-photo feature-pair"><figure><img alt="Sri Panwa terrace and sea view" src="assets/resort_terrace.webp" width="900" height="500" loading="lazy" decoding="async"/><figcaption>An easy arrival day for Scott &amp; Sheila</figcaption></figure><figure><img alt="Chillva Market entrance and food stalls" src="assets/chillva1.webp" width="819" height="615" loading="lazy" decoding="async"/><figcaption>Chillva Market · opens at 5 PM</figcaption></figure></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Thursday</div><div class="num">January 14</div></div>
@@ -367,7 +408,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-15">
 <div class="day-photo"><img alt="Sri Panwa cooking class with ocean view" src="assets/cooking_better.webp" width="1800" height="825" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Friday</div><div class="num">January 15</div></div>
@@ -378,7 +419,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-16">
 <div class="day-photo"><img alt="Siam Niramit stage performance" src="assets/siam1.webp" width="1400" height="766" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Saturday</div><div class="num">January 16</div></div>
@@ -390,7 +431,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-17">
 <div class="day-photo two"><img alt="Blue Elephant Phuket restaurant" src="assets/blueelephant.webp" width="1279" height="960" loading="lazy" decoding="async"/><img alt="Sunday Walking Street in Phuket Old Town" src="assets/oldtown.webp" width="1000" height="667" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Sunday</div><div class="num">January 17</div></div>
@@ -404,7 +445,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-18">
 <div class="day-photo feature-pair"><figure><img alt="Su Va Na underwater fine dining restaurant" src="assets/suvana.webp" width="1400" height="1400" loading="lazy" decoding="async"/><figcaption>7 PM dinner at Su Va Na</figcaption></figure><figure><img alt="Immersive digital art at MAYA Media Art Museum Phuket" src="assets/maya.webp" width="960" height="640" loading="lazy" decoding="async"/><figcaption>MAYA Media Art Museum</figcaption></figure></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Monday</div><div class="num">January 18</div></div>
@@ -420,7 +461,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-19">
 <div class="day-photo"><img alt="Cool Spa at Sri Panwa" src="assets/resort_greenery.webp" width="1200" height="1125" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Tuesday</div><div class="num">January 19</div></div>
@@ -430,7 +471,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-20">
 <div class="day-photo split">
 <img alt="Bird's nest seating at Three Monkeys" src="assets/birdsnest.webp" width="1800" height="1200" loading="lazy" decoding="async"/>
 <div class="side"><img alt="Passionfruit drink at Three Monkeys" src="assets/drink.webp" width="500" height="500" loading="lazy" decoding="async"/><img alt="Wanon BBQ half chicken at Three Monkeys" src="assets/chicken.webp" width="500" height="500" loading="lazy" decoding="async"/></div>
@@ -446,8 +487,8 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day"><div class="day-photo"><img alt="Sri Panwa cooking class with an ocean view" src="assets/cooking_better.webp" width="1800" height="825" loading="lazy" decoding="async"/></div><div class="day-copy"><div class="date"><div class="dow">Thursday</div><div class="num">January 21</div></div><div class="day-text"><div class="kicker">Cooking together + airport farewell</div><h3>Cooking class #2 + Gail &amp; Lyons depart</h3><div class="meta"><span>Cooking class · 12 PM</span><span>Leave for airport · ~8 PM</span><span>Flight · 12:25 AM Jan 22</span></div><p>Our second cooking class is at <b>12 PM</b>, with the afternoon free to relax and pack. Gail &amp; Lyons leave the resort for the airport at about <b>8 PM</b>. Their <b>12:25 AM flight is just after midnight on Friday, January 22</b>.</p><details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>12:00 PM</time><div>Cooking class #2 at Sri Panwa.</div></div><div class="row"><time>Afternoon</time><div>Relax, pack and enjoy the last few hours together.</div></div><div class="row"><time>~8:00 PM</time><div>Gail &amp; Lyons leave for the airport.</div></div><div class="row"><time>12:25 AM<br/>Jan 22</time><div>Gail &amp; Lyons’ flight departs.</div></div></div></details><div class="links"><a class="button primary" href="https://www.sripanwa.com/phuket-activities/" target="_blank">Sri Panwa activities ↗</a></div></div></div></article>
-<article class="day">
+<article class="day" id="day-jan-21"><div class="day-photo"><img alt="Sri Panwa cooking class with an ocean view" src="assets/cooking_better.webp" width="1800" height="825" loading="lazy" decoding="async"/></div><div class="day-copy"><div class="date"><div class="dow">Thursday</div><div class="num">January 21</div></div><div class="day-text"><div class="kicker">Cooking together + airport farewell</div><h3>Cooking class #2 + Gail &amp; Lyons depart</h3><div class="meta"><span>Cooking class · 12 PM</span><span>Leave for airport · ~8 PM</span><span>Flight · 12:25 AM Jan 22</span></div><p>Our second cooking class is at <b>12 PM</b>, with the afternoon free to relax and pack. Gail &amp; Lyons leave the resort for the airport at about <b>8 PM</b>. Their <b>12:25 AM flight is just after midnight on Friday, January 22</b>.</p><details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>12:00 PM</time><div>Cooking class #2 at Sri Panwa.</div></div><div class="row"><time>Afternoon</time><div>Relax, pack and enjoy the last few hours together.</div></div><div class="row"><time>~8:00 PM</time><div>Gail &amp; Lyons leave for the airport.</div></div><div class="row"><time>12:25 AM<br/>Jan 22</time><div>Gail &amp; Lyons’ flight departs.</div></div></div></details><div class="links"><a class="button primary" href="https://www.sripanwa.com/phuket-activities/" target="_blank">Sri Panwa activities ↗</a></div></div></div></article>
+<article class="day" id="day-jan-22">
 <div class="day-photo"><img alt="Pool and tropical view at Sri Panwa" src="assets/resort_pool.webp" width="1280" height="853" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Friday</div><div class="num">January 22</div></div>
@@ -457,7 +498,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-23">
 <div class="day-photo"><img alt="Sri Panwa terrace and sea view" src="assets/resort_terrace.webp" width="900" height="500" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Saturday</div><div class="num">January 23</div></div>
@@ -467,7 +508,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-24">
 <div class="day-photo"><img alt="Sri Panwa ocean view" src="assets/resort_pool.webp" width="1280" height="853" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Sunday</div><div class="num">January 24</div></div>
@@ -477,7 +518,7 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
+<article class="day" id="day-jan-25">
 <div class="day-photo"><img alt="Sri Panwa view" src="assets/resort_hero.webp" width="1800" height="1280" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Monday</div><div class="num">January 25</div></div>
