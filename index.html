@@ -193,17 +193,15 @@ section{padding:96px 0}
 .spa-copy{padding:20px 4px 0}
 .spa-copy h3{font-size:2.2rem}
 
-.dining-links{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
-  border:1px solid var(--line);margin-top:28px
-}
-.dining-links a{background:var(--paper);padding:20px;text-decoration:none;min-height:128px}
-.dining-links strong{
-  display:block;font-family:"Iowan Old Style","Baskerville","Times New Roman",serif;
-  font-size:1.45rem;font-weight:400
-}
-.dining-links span{display:block;color:var(--muted);font-size:.8rem;margin-top:7px}
-.dining-links a:hover{background:#fff}
+.dining-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 24px;margin-top:28px}
+.dining-links a{display:block;min-width:0;text-decoration:none}
+.dining-links img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:3px;transition:filter .2s ease}
+.dining-links .dining-copy{display:block;padding:18px 4px 0}
+.dining-links strong{display:block;font-family:"Iowan Old Style","Baskerville","Times New Roman",serif;font-size:2rem;font-weight:400;line-height:1.1}
+.dining-links .dining-description{display:block;color:var(--muted);font-size:.9rem;margin-top:8px;max-width:45ch}
+.dining-links .dining-more{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--sea);margin-top:13px}
+.dining-links a:hover img{filter:brightness(1.06)}
+.dining-links a:focus-visible{outline:2px solid var(--sea);outline-offset:6px}
 
 .footer{padding:52px 0 76px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}
 .print{
@@ -257,10 +255,10 @@ section{padding:96px 0}
 <nav>
 <div class="wrap">
 <a class="brand" href="#top">Phuket Together</a>
-<a href="#itinerary">Itinerary</a>
-<a href="#resort">Resort activities</a>
-<a href="#spa">Spa</a>
 <a href="#dining">Dining</a>
+<a href="#resort">Daily activities</a>
+<a href="#itinerary">Itinerary</a>
+<a href="#spa">Spa</a>
 </div>
 </nav>
 <main>
@@ -279,6 +277,35 @@ section{padding:96px 0}
 <div class="fact"><strong>Scott &amp; Sheila</strong><span>Arrive Jan 14 · depart Jan 25</span></div>
 <div class="fact"><strong>Trip rhythm</strong><span>One main outing at a time, with flexibility around Sparrow</span></div>
 </div></div>
+</div>
+</section>
+<section id="dining">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">At Sri Panwa</div><h2>Easy resort dining</h2></div><p>Ocean-view lunches, Japanese favorites, Thai dishes to share, and sunset drinks — plenty to look forward to without leaving the resort.</p></div>
+<div class="dining-links">
+<a href="https://www.babaphuket.com/baba-poolclub-international-cuisine/" target="_blank" rel="noopener"><img alt="Baba Poolclub overlooking its pool and the Andaman Sea" src="assets/dining-poolclub.webp" width="1600" height="900" loading="lazy" decoding="async"/><span class="dining-copy"><strong>Baba Poolclub</strong><span class="dining-description">International + Thai · an easy all-day family option, with ocean views.</span><span class="dining-more">Explore the restaurant ↗</span></span></a>
+<a href="https://www.babaphuket.com/baba-iki-the-best-japanese-restaurant/" target="_blank" rel="noopener"><img alt="Ocean-facing dining room at Baba IKI" src="assets/dining-iki.webp" width="1600" height="900" loading="lazy" decoding="async"/><span class="dining-copy"><strong>Baba IKI</strong><span class="dining-description">Japanese · sushi, sashimi and yakitori in a bright dining room overlooking the sea.</span><span class="dining-more">Explore the restaurant ↗</span></span></a>
+<a href="https://www.babaphuket.com/baba-chino/" target="_blank" rel="noopener"><img alt="Baba Chino dining room with timber ceilings and garden views" src="assets/dining-chino.webp" width="1600" height="900" loading="lazy" decoding="async"/><span class="dining-copy"><strong>Baba Chino</strong><span class="dining-description">Chinese · dim sum and comforting dishes in an airy, garden-facing dining room.</span><span class="dining-more">Explore the restaurant ↗</span></span></a>
+<a href="https://www.babaphuket.com/baba-nest-best-exclusive-rooftop-bar/" target="_blank" rel="noopener"><img alt="Baba Nest rooftop lounge and panoramic sea view at sunset" src="assets/dining-nest.webp" width="1600" height="900" loading="lazy" decoding="async"/><span class="dining-copy"><strong>Baba Nest</strong><span class="dining-description">The iconic sunset rooftop · a memorable spot for drinks; reserve ahead.</span><span class="dining-more">Explore the restaurant ↗</span></span></a>
+<a href="https://www.babaphuket.com/baba-soul-food-best-thai-cuisine/" target="_blank" rel="noopener"><img alt="Warmly lit interior of Baba Soul Food" src="assets/dining-soul.webp" width="1600" height="900" loading="lazy" decoding="async"/><span class="dining-copy"><strong>Baba Soul Food</strong><span class="dining-description">Southern Thai food for sharing in a warm, richly decorated dining room.</span><span class="dining-more">Explore the restaurant ↗</span></span></a>
+<a href="https://www.babaphuket.com/baba-hot-box/" target="_blank" rel="noopener"><img alt="Baba Hot Box restaurant beside its pool and tropical gardens" src="assets/dining-hotbox.webp" width="1600" height="900" loading="lazy" decoding="async"/><span class="dining-copy"><strong>Baba Hot Box</strong><span class="dining-description">Josper-grilled meats and seafood beside the pool and tropical gardens.</span><span class="dining-more">Explore the restaurant ↗</span></span></a>
+</div>
+</div>
+</section>
+<section id="resort">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">On the open days</div><h2>Daily resort activities</h2></div><p>These are the currently published recurring activities and give us optional structure without over-scheduling the trip.</p></div>
+<div class="activity-grid">
+<div class="weekday"><h4>Monday</h4><ul><li>8–8:45 AM · Aerial yoga</li><li>1–3 PM · BDMS consultation + InBody</li><li>2–3 PM · Bracelet making</li><li>5–6 PM · Sunset walk</li></ul></div>
+<div class="weekday"><h4>Tuesday</h4><ul><li>8–9 AM · Hatha Vinyasa Yoga</li><li>9–10 AM / 3–4 PM · Kayak island tour</li><li>2–3 PM · DIY keychain</li><li>3–4 PM · Thai boxing</li><li>3–4 PM · Contrast therapy</li></ul></div>
+<div class="weekday"><h4>Wednesday</h4><ul><li>10–11 AM · Thai boxing</li><li>1–3 PM · BDMS consultation + InBody</li><li>2:30–3 PM · Kids yoga</li><li>3:30–4 PM · Tai Chi</li></ul></div>
+<div class="weekday"><h4>Thursday</h4><ul><li>6:30–7:30 AM · Sunrise yoga</li><li>2–3 PM · DIY keychain</li><li>2–3 PM · Herbal inhaler class</li><li>3–3:45 PM · Functional training</li></ul></div>
+<div class="weekday"><h4>Friday</h4><ul><li>8–8:30 AM · Mobility + flexibility</li><li>1–3 PM · BDMS consultation + InBody</li><li>2–3 PM · Turtle experience</li><li>3–4 PM · Thai boxing</li><li>3–4 PM · Contrast therapy</li></ul></div>
+<div class="weekday"><h4>Saturday</h4><ul><li>8–8:45 AM · Body weight</li><li>9–10 AM / 3–4 PM · Kayak island tour</li><li>2–3 PM · Canvas painting</li><li>3–3:45 PM · Hatha yoga</li></ul></div>
+<div class="weekday"><h4>Sunday</h4><ul><li>8–8:45 AM · Body stretching</li><li>2–3 PM · Bracelet making</li><li>3–4 PM · Body combat</li><li>Bing Su pass-around at Forest Waterfall Pool</li></ul></div>
+</div>
+<div class="notice"><b>Daily:</b> cooking class at Baba Sunset Lounge at 12 PM and 3 PM. Yoga / boxing can also be arranged on request, and island excursions are available with advance reservation.</div>
+<div class="links"><a class="button primary" href="https://www.sripanwa.com/FileDownload/FO/2026-oct-dec-sripanwa-daily-activities.pdf" target="_blank">Current activity sheet ↗</a></div>
 </div>
 </section>
 <section class="band itinerary" id="itinerary">
@@ -459,22 +486,7 @@ section{padding:96px 0}
 </article>
 </div>
 </section>
-<section id="resort">
-<div class="wrap">
-<div class="section-head"><div><div class="eyebrow">On the open days</div><h2>Resort activities</h2></div><p>These are the currently published recurring activities and give us optional structure without over-scheduling the trip.</p></div>
-<div class="activity-grid">
-<div class="weekday"><h4>Monday</h4><ul><li>8–8:45 AM · Aerial yoga</li><li>1–3 PM · BDMS consultation + InBody</li><li>2–3 PM · Bracelet making</li><li>5–6 PM · Sunset walk</li></ul></div>
-<div class="weekday"><h4>Tuesday</h4><ul><li>8–9 AM · Hatha Vinyasa Yoga</li><li>9–10 AM / 3–4 PM · Kayak island tour</li><li>2–3 PM · DIY keychain</li><li>3–4 PM · Thai boxing</li><li>3–4 PM · Contrast therapy</li></ul></div>
-<div class="weekday"><h4>Wednesday</h4><ul><li>10–11 AM · Thai boxing</li><li>1–3 PM · BDMS consultation + InBody</li><li>2:30–3 PM · Kids yoga</li><li>3:30–4 PM · Tai Chi</li></ul></div>
-<div class="weekday"><h4>Thursday</h4><ul><li>6:30–7:30 AM · Sunrise yoga</li><li>2–3 PM · DIY keychain</li><li>2–3 PM · Herbal inhaler class</li><li>3–3:45 PM · Functional training</li></ul></div>
-<div class="weekday"><h4>Friday</h4><ul><li>8–8:30 AM · Mobility + flexibility</li><li>1–3 PM · BDMS consultation + InBody</li><li>2–3 PM · Turtle experience</li><li>3–4 PM · Thai boxing</li><li>3–4 PM · Contrast therapy</li></ul></div>
-<div class="weekday"><h4>Saturday</h4><ul><li>8–8:45 AM · Body weight</li><li>9–10 AM / 3–4 PM · Kayak island tour</li><li>2–3 PM · Canvas painting</li><li>3–3:45 PM · Hatha yoga</li></ul></div>
-<div class="weekday"><h4>Sunday</h4><ul><li>8–8:45 AM · Body stretching</li><li>2–3 PM · Bracelet making</li><li>3–4 PM · Body combat</li><li>Bing Su pass-around at Forest Waterfall Pool</li></ul></div>
-</div>
-<div class="notice"><b>Daily:</b> cooking class at Baba Sunset Lounge at 12 PM and 3 PM. Yoga / boxing can also be arranged on request, and island excursions are available with advance reservation.</div>
-<div class="links"><a class="button primary" href="https://www.sripanwa.com/FileDownload/FO/2026-oct-dec-sripanwa-daily-activities.pdf" target="_blank">Current activity sheet ↗</a></div>
-</div>
-</section>
+
 <section class="band" id="spa">
 <div class="wrap">
 <div class="section-head"><div><div class="eyebrow">Spa choices</div><h2>On-property luxury or local value</h2></div><p>Both are easy to fit into the leisure days.</p></div>
@@ -484,20 +496,7 @@ section{padding:96px 0}
 </div>
 </div>
 </section>
-<section id="dining">
-<div class="wrap">
-<div class="section-head"><div><div class="eyebrow">At Sri Panwa</div><h2>Easy resort dining</h2></div><p>For the nights we want to stay close to the villa, these are the main restaurant links to keep handy.</p></div>
-<div class="day-photo"><img alt="Sri Panwa dining and ocean setting" src="assets/resort_terrace.webp" width="900" height="500" loading="lazy" decoding="async"/></div>
-<div class="dining-links">
-<a href="https://www.babaphuket.com/baba-poolclub-international-cuisine" target="_blank"><strong>Baba Poolclub</strong><span>International + Thai · easiest all-day family option ↗</span></a>
-<a href="https://www.babaphuket.com/baba-iki-the-best-japanese-restaurant/" target="_blank"><strong>Baba IKI</strong><span>Japanese · sushi, sashimi &amp; yakitori ↗</span></a>
-<a href="https://www.babaphuket.com/baba-chino" target="_blank"><strong>Baba Chino</strong><span>Chinese · dim sum and comforting dishes ↗</span></a>
-<a href="https://www.babaphuket.com/baba-nest-best-exclusive-rooftop-bar" target="_blank"><strong>Baba Nest</strong><span>Iconic sunset rooftop · reserve ahead ↗</span></a>
-<a href="https://www.babaphuket.com/baba-soul-food-best-thai-cuisine/" target="_blank"><strong>Baba Soul Food</strong><span>Southern Thai food for sharing ↗</span></a>
-<a href="https://www.babaphuket.com/baba-hot-box" target="_blank"><strong>Baba Hot Box</strong><span>Josper-grilled meats and seafood ↗</span></a>
-</div>
-</div>
-</section>
+
 </main>
 <footer class="footer">
 <div class="wrap">
