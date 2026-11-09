@@ -45,7 +45,7 @@ p{margin:.55em 0 0}
   min-height:92vh;display:grid;align-items:end;color:#fff;position:relative;
   background:
     linear-gradient(180deg,rgba(8,25,31,.04) 15%,rgba(8,25,31,.22) 50%,rgba(8,25,31,.78) 100%),
-    url("assets/resort_hero.jpg") center/cover no-repeat;
+    url("assets/resort_hero.webp") center/cover no-repeat;
 }
 .hero .wrap{padding:120px 0 78px}
 .hero .eyebrow{color:rgba(255,255,255,.82)}
@@ -112,6 +112,12 @@ section{padding:96px 0}
 }
 .day-photo.split .side{display:grid;gap:10px}
 .day-photo.split img{border-radius:3px;height:100%;object-fit:cover}
+
+.supporting-photos{margin-top:24px}
+.supporting-photos.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.supporting-photos figure{margin:0;min-width:0}
+.supporting-photos img{border-radius:3px;aspect-ratio:3/2;object-fit:cover}
+.supporting-photos figcaption{font-size:.78rem;color:var(--muted);margin-top:6px}
 
 .day-copy{
   display:grid;grid-template-columns:170px minmax(0,760px);
@@ -274,7 +280,7 @@ section{padding:96px 0}
 <p>A relaxed rhythm of resort time, food, culture and a few special outings — with the practical details tucked away when you need them.</p>
 </div>
 <article class="day">
-<div class="day-photo"><img alt="Our Sri Panwa villa" src="assets/villa.png"/></div>
+<div class="day-photo"><img alt="Our Sri Panwa villa" src="assets/villa.webp" width="1024" height="699" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Monday</div><div class="num">January 11</div></div>
 <div class="day-text"><div class="kicker">Arrival + reset</div><h3>Jet lag day at the resort</h3>
@@ -285,7 +291,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Sri Panwa pool and tropical view" src="assets/resort_pool.jpg"/></div>
+<div class="day-photo"><img alt="Sri Panwa pool and tropical view" src="assets/resort_pool.webp" width="1280" height="853" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Tuesday</div><div class="num">January 12</div></div>
 <div class="day-text"><div class="kicker">Resort day</div><h3>Spa, private pool &amp; hotel restaurants</h3>
@@ -295,7 +301,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo two"><img alt="Chillva Market entrance" src="assets/chillva1.png"/><img alt="Chillva Market food stalls" src="assets/chillva2.png"/></div>
+<div class="day-photo"><img alt="Chillva Market entrance and food stalls" src="assets/chillva1.webp" width="819" height="615" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Wednesday</div><div class="num">January 13</div></div>
 <div class="day-text"><div class="kicker">Leisure + night market</div><h3>Chillva Market</h3>
@@ -307,7 +313,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Sri Panwa terrace and sea view" src="assets/resort_terrace.jpg"/></div>
+<div class="day-photo"><img alt="Sri Panwa terrace and sea view" src="assets/resort_terrace.webp" width="900" height="500" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Thursday</div><div class="num">January 14</div></div>
 <div class="day-text"><div class="kicker">Arrival day</div><h3>Scott &amp; Sheila arrive</h3>
@@ -317,7 +323,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Sri Panwa cooking class with ocean view" src="assets/cooking_better.png"/></div>
+<div class="day-photo"><img alt="Sri Panwa cooking class with ocean view" src="assets/cooking_better.webp" width="1800" height="825" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Friday</div><div class="num">January 15</div></div>
 <div class="day-text"><div class="kicker">Resort activity</div><h3>Cooking class</h3>
@@ -328,7 +334,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo two"><img alt="Siam Niramit aerial performers" src="assets/siam1.png"/><img alt="Siam Niramit finale with fireworks" src="assets/siam2.png"/></div>
+<div class="day-photo"><img alt="Siam Niramit stage performance" src="assets/siam1.webp" width="1400" height="766" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Saturday</div><div class="num">January 16</div></div>
 <div class="day-text"><div class="kicker">Evening outing</div><h3>Siam Niramit</h3>
@@ -340,7 +346,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Blue Elephant Phuket restaurant" src="assets/blueelephant.png"/></div>
+<div class="day-photo two"><img alt="Blue Elephant Phuket restaurant" src="assets/blueelephant.webp" width="1279" height="960" loading="lazy" decoding="async"/><img alt="Sunday Walking Street in Phuket Old Town" src="assets/oldtown.webp" width="1000" height="667" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Sunday</div><div class="num">January 17</div></div>
 <div class="day-text"><div class="kicker">Old Phuket Town</div><h3>Blue Elephant + Sunday Walking Street</h3>
@@ -351,20 +357,21 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Su Va Na underwater fine dining restaurant" src="assets/suvana.png"/></div>
+<div class="day-photo"><img alt="Su Va Na underwater fine dining restaurant" src="assets/suvana.webp" width="1400" height="1400" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Monday</div><div class="num">January 18</div></div>
 <div class="day-text"><div class="kicker">Central Phuket + special dinner</div><h3>Su Va Na underwater fine dining</h3>
 <div class="meta"><span>Central Phuket</span><span>~30–35 min drive</span><span>7 PM dinner</span></div>
 <p><b>Su Va Na is not the aquarium.</b> It is a separate, highly rated fine-dining restaurant with an underwater setting, known for its food and atmosphere. During the day we can do Central Mall, Aquaria, MAYA and — if useful — OTO Play Park before dinner.</p>
 <details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Daytime</time><div>Central Phuket, Aquaria, MAYA, optional OTO Play Park.</div></div><div class="row"><time>7:00 PM</time><div>Su Va Na dinner reservation.</div></div></div></details>
+<div class="supporting-photos two"><figure><img alt="Central Phuket Floresta skywalk" src="assets/central.webp" width="800" height="451" loading="lazy" decoding="async"/><figcaption>Central Phuket</figcaption></figure><figure><img alt="Immersive digital art at MAYA Media Art Museum Phuket" src="assets/maya.webp" width="960" height="640" loading="lazy" decoding="async"/><figcaption>MAYA Media Art Museum</figcaption></figure></div>
 <div class="baby"><b>Children under 7:</b> Su Va Na provides a supervised play area only steps from the table. A certified nanny supervises the child and can bring them to and from the parents’ table as needed. This service is mandatory for children under 7 and costs <b>1,500 THB per child</b>.</div>
 <div class="links"><a class="button primary" href="https://suvanaphuket.com/" target="_blank">Restaurant details ↗</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Su+Va+Na+Phuket" target="_blank">Map ↗</a></div>
 </div>
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Lush Sri Panwa resort view" src="assets/resort_greenery.jpg"/></div>
+<div class="day-photo"><img alt="Cool Spa at Sri Panwa" src="assets/resort_greenery.webp" width="1200" height="1125" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Tuesday</div><div class="num">January 19</div></div>
 <div class="day-text"><div class="kicker">Resort day</div><h3>Cooking class, snorkeling &amp; spa</h3>
@@ -375,8 +382,8 @@ section{padding:96px 0}
 </article>
 <article class="day">
 <div class="day-photo split">
-<img alt="Bird's nest seating at Three Monkeys" src="assets/birdsnest.png"/>
-<div class="side"><img alt="Passionfruit drink at Three Monkeys" src="assets/drink.png"/><img alt="Wanon BBQ half chicken at Three Monkeys" src="assets/chicken.png"/></div>
+<img alt="Bird's nest seating at Three Monkeys" src="assets/birdsnest.webp" width="1800" height="1012" loading="lazy" decoding="async"/>
+<div class="side"><img alt="Passionfruit drink at Three Monkeys" src="assets/drink.webp" width="500" height="500" loading="lazy" decoding="async"/><img alt="Wanon BBQ half chicken at Three Monkeys" src="assets/chicken.webp" width="500" height="500" loading="lazy" decoding="async"/></div>
 </div>
 <div class="day-copy">
 <div class="date"><div class="dow">Wednesday</div><div class="num">January 20</div></div>
@@ -385,12 +392,12 @@ section{padding:96px 0}
 <p>We’ll do the short experience at <b>Bukit Elephant Park</b> in the morning, then drive to <b>Three Monkeys</b> for lunch in one of the bird’s nest tables.</p>
 <details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Morning</time><div>Bukit Elephant Park short program.</div></div><div class="row"><time>Afterward</time><div>About 13 minutes to Three Monkeys.</div></div><div class="row"><time>Lunch</time><div>Bird’s nest seating in the jungle setting.</div></div></div></details>
 <div class="links"><a class="button primary" href="https://bukitelephantpark.com/" target="_blank">Bukit Elephant Park ↗</a><a class="button" href="https://threemonkeysphuket.com/" target="_blank">Three Monkeys ↗</a></div>
-<div class="visual-note">Also on the menu photos you sent: passionfruit drink, beef burger with fries, and “Wanon” BBQ half chicken.</div>
+<div class="supporting-photos"><img alt="Elephant at Bukit Elephant Park" src="assets/elephant.webp" width="720" height="480" loading="lazy" decoding="async"/></div>
 </div>
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Sea and sky view from Sri Panwa" src="assets/resort_sky.jpg"/></div>
+<div class="day-photo"><img alt="Sri Panwa resort and sea view" src="assets/resort_hero.webp" width="1800" height="1280" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Thursday</div><div class="num">January 21</div></div>
 <div class="day-text"><div class="kicker">Transition day</div><h3>Leisure at Sri Panwa</h3>
@@ -400,7 +407,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Pool and tropical view at Sri Panwa" src="assets/resort_pool.jpg"/></div>
+<div class="day-photo"><img alt="Pool and tropical view at Sri Panwa" src="assets/resort_pool.webp" width="1280" height="853" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Friday</div><div class="num">January 22</div></div>
 <div class="day-text"><div class="kicker">Leisure day</div><h3>Pool, beach, spa or resort activities</h3>
@@ -410,7 +417,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Sri Panwa terrace and sea view" src="assets/resort_terrace.jpg"/></div>
+<div class="day-photo"><img alt="Sri Panwa terrace and sea view" src="assets/resort_terrace.webp" width="900" height="500" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Saturday</div><div class="num">January 23</div></div>
 <div class="day-text"><div class="kicker">Leisure day</div><h3>A slow day together</h3>
@@ -420,7 +427,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Sri Panwa ocean view" src="assets/resort_ocean.jpg"/></div>
+<div class="day-photo"><img alt="Sri Panwa ocean view" src="assets/resort_pool.webp" width="1280" height="853" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Sunday</div><div class="num">January 24</div></div>
 <div class="day-text"><div class="kicker">Final full day</div><h3>One last easy resort day</h3>
@@ -430,7 +437,7 @@ section{padding:96px 0}
 </div>
 </article>
 <article class="day">
-<div class="day-photo"><img alt="Sri Panwa view" src="assets/resort_hero.jpg"/></div>
+<div class="day-photo"><img alt="Sri Panwa view" src="assets/resort_hero.webp" width="1800" height="1280" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Monday</div><div class="num">January 25</div></div>
 <div class="day-text"><div class="kicker">Departure day</div><h3>Goodbye Phuket</h3>
@@ -461,15 +468,15 @@ section{padding:96px 0}
 <div class="wrap">
 <div class="section-head"><div><div class="eyebrow">Spa choices</div><h2>On-property luxury or local value</h2></div><p>Both are easy to fit into the leisure days.</p></div>
 <div class="spa-grid">
-<div class="spa-item"><img alt="Lush Sri Panwa setting" src="assets/resort_greenery.jpg"/><div class="spa-copy"><div class="eyebrow">At Sri Panwa</div><h3 style="font-size:2rem">Cool Spa</h3><p>Convenient and beautiful, but the resort pricing is high. The current menu lists a 60-minute traditional Thai massage at THB 3,300++.</p><div class="links"><a class="button primary" href="https://www.coolspaphuket.com/pdf/cool-spa-phuket-menu.pdf" target="_blank">Spa menu ↗</a></div></div></div>
-<div class="spa-item"><img alt="Cape Panwa coastal view" src="assets/resort_sky.jpg"/><div class="spa-copy"><div class="eyebrow">About 5 minutes away</div><h3 style="font-size:2rem">Thai House Spa @ Panwa Hill</h3><p>The more reasonably priced nearby option. The live QR menu is the best place to check current treatments and prices.</p><div class="links"><a class="button primary" href="https://www.thaiqrmenu.com/?id=WbecWclwdHVJjmX1zQr7" target="_blank">Live menu ↗</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Thai+House+Spa+Panwa+Hill+Phuket" target="_blank">Map ↗</a></div></div></div>
+<div class="spa-item"><img alt="Cool Spa at Sri Panwa" src="assets/resort_greenery.webp" width="1200" height="1125" loading="lazy" decoding="async"/><div class="spa-copy"><div class="eyebrow">At Sri Panwa</div><h3 style="font-size:2rem">Cool Spa</h3><p>Convenient and beautiful, but the resort pricing is high. The current menu lists a 60-minute traditional Thai massage at THB 3,300++.</p><div class="links"><a class="button primary" href="https://www.coolspaphuket.com/pdf/cool-spa-phuket-menu.pdf" target="_blank">Spa menu ↗</a></div></div></div>
+<div class="spa-item"><img alt="Sri Panwa on Cape Panwa" src="assets/resort_hero.webp" width="1800" height="1280" loading="lazy" decoding="async"/><div class="spa-copy"><div class="eyebrow">About 5 minutes away</div><h3 style="font-size:2rem">Thai House Spa @ Panwa Hill</h3><p>The more reasonably priced nearby option. The live QR menu is the best place to check current treatments and prices.</p><div class="links"><a class="button primary" href="https://www.thaiqrmenu.com/?id=WbecWclwdHVJjmX1zQr7" target="_blank">Live menu ↗</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Thai+House+Spa+Panwa+Hill+Phuket" target="_blank">Map ↗</a></div></div></div>
 </div>
 </div>
 </section>
 <section id="dining">
 <div class="wrap">
 <div class="section-head"><div><div class="eyebrow">At Sri Panwa</div><h2>Easy resort dining</h2></div><p>For the nights we want to stay close to the villa, these are the main restaurant links to keep handy.</p></div>
-<div class="day-photo"><img alt="Sri Panwa dining and ocean setting" src="assets/resort_terrace.jpg"/></div>
+<div class="day-photo"><img alt="Sri Panwa dining and ocean setting" src="assets/resort_terrace.webp" width="900" height="500" loading="lazy" decoding="async"/></div>
 <div class="dining-links">
 <a href="https://www.babaphuket.com/baba-poolclub-international-cuisine" target="_blank"><strong>Baba Poolclub</strong><span>International + Thai · easiest all-day family option ↗</span></a>
 <a href="https://www.babaphuket.com/baba-iki-the-best-japanese-restaurant/" target="_blank"><strong>Baba IKI</strong><span>Japanese · sushi, sashimi &amp; yakitori ↗</span></a>
