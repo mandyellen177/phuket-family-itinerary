@@ -124,6 +124,16 @@ section{padding:96px 0}
 .supporting-photos img{border-radius:3px;aspect-ratio:3/2;object-fit:cover}
 .supporting-photos figcaption{font-size:.78rem;color:var(--muted);margin-top:6px}
 
+.outing-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.outing-option{min-width:0;border-bottom:1px solid var(--line);padding-bottom:24px}
+.outing-option>img{aspect-ratio:16/9;object-fit:cover;border-radius:3px}
+.option-copy{padding:20px 4px 0}.option-copy h4{font-family:"Iowan Old Style","Baskerville","Times New Roman",serif;font-size:2rem;font-weight:400;line-height:1.1;margin:8px 0 12px}
+.option-copy p{font-size:.94rem;color:var(--muted)}.option-copy .button{margin-top:16px}
+.seafood-photo{margin:24px 0 0}.seafood-photo figcaption{font-size:.78rem;color:var(--muted);margin-top:8px}
+.kan-menu-crop{display:block;position:relative;aspect-ratio:1/1.10;overflow:hidden;border-radius:3px;background:#000}
+.kan-menu-crop img{position:absolute;width:109%;max-width:none;height:auto;left:-4.5%;bottom:-6%}
+@media(max-width:680px){.outing-options{grid-template-columns:1fr}.option-copy h4{font-size:1.7rem}}
+
 .day-copy{
   display:grid;grid-template-columns:170px minmax(0,760px);
   justify-content:space-between;gap:70px;padding:32px 8px 0
@@ -335,25 +345,14 @@ section{padding:96px 0}
 </div>
 </div>
 </article>
-<article class="day">
-<div class="day-photo"><img alt="Chillva Market entrance and food stalls" src="assets/chillva1.webp" width="819" height="615" loading="lazy" decoding="async"/></div>
-<div class="day-copy">
-<div class="date"><div class="dow">Wednesday</div><div class="num">January 13</div></div>
-<div class="day-text"><div class="kicker">Leisure + night market</div><h3>Chillva Market</h3>
-<div class="meta"><span>Leave about 4 PM</span><span>~25–30 min drive</span><span>Live music + dinner</span></div>
-<p>We’ll keep the daytime open at Sri Panwa, then head to Chillva Market around opening time for shopping, street food, live music, and an easy early dinner.</p>
-<details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Daytime</time><div>Pool, beach, spa or resort activities.</div></div><div class="row"><time>4:00 PM</time><div>Leave Sri Panwa.</div></div><div class="row"><time>5–8 PM</time><div>Market, food stalls and live music.</div></div></div></details>
-<div class="links"><a class="button primary" href="https://www.google.com/maps/search/?api=1&amp;query=Chillva+Market+Phuket" target="_blank">Map ↗</a><a class="button" href="https://www.chillvamarket.com/" target="_blank">Details ↗</a></div>
-</div>
-</div>
-</article>
+<article class="day"><div class="outing-options"><div class="outing-option"><img alt="Behind the scenes at The Distillery Phuket" src="assets/distillery-visit.webp" width="600" height="404" loading="lazy" decoding="async"/><div class="option-copy"><div class="eyebrow">Option 1 · guided tour</div><h4>Distillery Visit</h4><p>A welcome mojito, a behind-the-scenes visit through the sugarcane garden and French copper still, and a tasting of nine spirits: six rums, two gins and one vodka.</p><div class="meta"><span>590 THB per person</span><span>1 hour</span></div><a class="button" href="https://thedistilleryphuket.com/activities/distillery-visit" target="_blank" rel="noopener">Visit details ↗</a></div></div><div class="outing-option"><img alt="Chalong Bay rum cocktail workshop at The Distillery Phuket" src="assets/distillery-workshop.webp" width="960" height="1200" loading="lazy" decoding="async"/><div class="option-copy"><div class="eyebrow">Option 2 · hands-on workshop</div><h4>Mini Rum Cocktail Workshop</h4><p>Make and sip two Chalong Bay rum cocktails at your own fully stocked station. Includes a guided tour and the nine-flavour tasting: six rums, two gins and one vodka.</p><div class="meta"><span>990 THB per person</span><span>1.5 hours</span><span>2 PM daily</span></div><a class="button" href="https://thedistilleryphuket.com/activities/cocktail-workshop" target="_blank" rel="noopener">Workshop details ↗</a></div></div></div><div class="day-copy"><div class="date"><div class="dow">Wednesday</div><div class="num">January 13</div></div><div class="day-text"><div class="kicker">Gail &amp; Lyons · Chalong Bay outing</div><h3>The Distillery Phuket + Kan Eang seafood lunch</h3><div class="meta"><span>Two distillery options</span><span>Lunch on Chalong Bay</span></div><p>A day out for Gail &amp; Lyons: visit <b>The Distillery Phuket, home of Chalong Bay Rum</b>, and enjoy a seafood lunch at <b>Kan Eang @ Pier</b>. Choose the guided Distillery Visit or the Mini Rum Cocktail Workshop above.</p><details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Tour option</time><div>Book a Distillery Visit slot that leaves time for Kan Eang lunch afterward.</div></div><div class="row"><time>2 PM option</time><div>If we choose the Mini Rum Cocktail Workshop, have an earlier Kan Eang lunch first, then head to the distillery for the 2–3:30 PM workshop.</div></div></div></details><div class="restaurant-story"><p><b>Kan Eang @ Pier, Chalong Bay.</b> A true Phuket institution, one of the island’s oldest and most famous seafood restaurants, going strong for about 50 years and rated 4.5 stars across thousands of reviews. You sit right on the bay under the trees, pick your catch from the live tanks, and watch the boats come in. The reputation rests on decades of fresh, consistent seafood and generous plates: whole fish grilled in salt, garlic prawns, chili crab, steamed shellfish, with a full menu of non-seafood Thai dishes so everyone is covered.</p></div><figure class="seafood-photo"><a href="https://kaneang-pier.com/food-menu" target="_blank" rel="noopener"><span class="kan-menu-crop"><img alt="Kan Eang lobster four ways: garlic butter, white wine cream, Thermidor, and cashew nuts with dried chili" src="assets/kaneang-lobster.webp" width="941" height="2000" loading="lazy" decoding="async"/></span></a><figcaption>Kan Eang’s lobster menu · four ways to enjoy the catch.</figcaption></figure><div class="links"><a class="button primary" href="https://thedistilleryphuket.com/" target="_blank" rel="noopener">The Distillery Phuket ↗</a><a class="button" href="https://kaneang-pier.com/food-menu" target="_blank" rel="noopener">Kan Eang menu ↗</a></div></div></div></article>
 <article class="day">
 <div class="day-photo"><img alt="Sri Panwa terrace and sea view" src="assets/resort_terrace.webp" width="900" height="500" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Thursday</div><div class="num">January 14</div></div>
-<div class="day-text"><div class="kicker">Arrival day</div><h3>Scott &amp; Sheila arrive</h3>
+<div class="day-text"><div class="kicker">Arrival day</div><h3>Scott &amp; Sheila arrive + resort dinner</h3>
 <div class="meta"><span>6:50 AM arrival</span><span>Leisure</span><span>No rush</span></div>
-<p>The schedule stays open so everyone can settle in. Pool, beach, spa, lunch at the resort — whatever feels easiest after travel.</p>
+<p>The schedule stays open so everyone can settle in. Pool, beach or spa — whatever feels easiest after travel. We’ll have dinner together at the resort.</p>
 </div>
 </div>
 </article>
@@ -361,7 +360,7 @@ section{padding:96px 0}
 <div class="day-photo"><img alt="Sri Panwa cooking class with ocean view" src="assets/cooking_better.webp" width="1800" height="825" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Friday</div><div class="num">January 15</div></div>
-<div class="day-text"><div class="kicker">Resort activity</div><h3>Cooking class</h3>
+<div class="day-text"><div class="kicker">Resort activity</div><h3>Cooking class #1</h3>
 <div class="meta"><span>At Sri Panwa</span><span>12 PM or 3 PM</span><span>Easy day</span></div>
 <p>One of the resort’s daily cooking classes, with plenty of time around it for the pool, spa, or a relaxed lunch.</p>
 <div class="links"><a class="button primary" href="https://www.sripanwa.com/phuket-activities/" target="_blank">Sri Panwa activities ↗</a></div>
@@ -412,9 +411,9 @@ section{padding:96px 0}
 <div class="day-photo"><img alt="Cool Spa at Sri Panwa" src="assets/resort_greenery.webp" width="1200" height="1125" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Tuesday</div><div class="num">January 19</div></div>
-<div class="day-text"><div class="kicker">Resort day</div><h3>Cooking class, snorkeling &amp; spa</h3>
-<div class="meta"><span>At Sri Panwa</span><span>Dad snorkels</span><span>Spa / pool</span></div>
-<p>Dad can snorkel while everyone else keeps it easy with the pool or spa. We can also use another cooking-class slot if anyone wants one.</p>
+<div class="day-text"><div class="kicker">Resort day</div><h3>Leisure at Sri Panwa</h3>
+<div class="meta"><span>At Sri Panwa</span><span>Open day</span><span>Spa / pool</span></div>
+<p>A completely open day for the pool, beach, spa, snorkeling or whatever feels right. No cooking class today — our second class is on January 21 at noon.</p>
 </div>
 </div>
 </article>
@@ -425,32 +424,23 @@ section{padding:96px 0}
 </div>
 <div class="day-copy">
 <div class="date"><div class="dow">Wednesday</div><div class="num">January 20</div></div>
-<div class="day-text"><div class="kicker">Wildlife + lunch</div><h3>Bukit Elephant Park + 3 Monkeys Restaurant</h3>
+<div class="day-text"><div class="kicker">Wildlife, lunch + farewell dinner</div><h3>Bukit Elephant Park + 3 Monkeys Restaurant</h3>
 <div class="meta"><span>1.5-hour elephant visit</span><span>~35–40 min from resort</span><span>~13 min to lunch</span></div>
-<p>We’ll do the short experience at <b>Bukit Elephant Park</b> in the morning, then drive to <b>3 Monkeys Restaurant</b> for lunch. We have the option to eat in one of the bird’s nest tables, tucked into the tropical greenery.</p>
-<details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Morning</time><div>Bukit Elephant Park short program.</div></div><div class="row"><time>Afterward</time><div>About 13 minutes to 3 Monkeys Restaurant.</div></div><div class="row"><time>Lunch</time><div>Optional bird’s nest seating in the jungle setting.</div></div></div></details>
+<p>We’ll do the short experience at <b>Bukit Elephant Park</b> in the morning, then drive to <b>3 Monkeys Restaurant</b> for lunch. We have the option to eat in one of the bird’s nest tables, tucked into the tropical greenery. In the evening, we’ll gather for a farewell dinner at the resort before Gail &amp; Lyons leave tomorrow.</p>
+<details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>Morning</time><div>Bukit Elephant Park short program.</div></div><div class="row"><time>Afterward</time><div>About 13 minutes to 3 Monkeys Restaurant.</div></div><div class="row"><time>Lunch</time><div>Optional bird’s nest seating in the jungle setting.</div></div><div class="row"><time>Evening</time><div>Farewell dinner together at the resort.</div></div></div></details>
 <div class="links"><a class="button primary" href="https://bukitelephantpark.com/" target="_blank">Bukit Elephant Park ↗</a><a class="button" href="https://threemonkeysphuket.com/" target="_blank">3 Monkeys Restaurant ↗</a></div>
 <div class="supporting-photos"><img alt="Elephant at Bukit Elephant Park" src="assets/elephant.webp" width="720" height="480" loading="lazy" decoding="async"/></div>
 </div>
 </div>
 </article>
-<article class="day">
-<div class="day-photo"><img alt="Sri Panwa resort and sea view" src="assets/resort_hero.webp" width="1800" height="1280" loading="lazy" decoding="async"/></div>
-<div class="day-copy">
-<div class="date"><div class="dow">Thursday</div><div class="num">January 21</div></div>
-<div class="day-text"><div class="kicker">Transition day</div><h3>Leisure at Sri Panwa</h3>
-<div class="meta"><span>Gail &amp; Lyons depart</span><span>Scott &amp; Sheila change villas</span><span>Open day</span></div>
-<p>A flexible day around departures and the villa change. Pool, lunch, spa, or simply an easy afternoon together.</p>
-</div>
-</div>
-</article>
+<article class="day"><div class="day-photo"><img alt="Sri Panwa cooking class with an ocean view" src="assets/cooking_better.webp" width="1800" height="825" loading="lazy" decoding="async"/></div><div class="day-copy"><div class="date"><div class="dow">Thursday</div><div class="num">January 21</div></div><div class="day-text"><div class="kicker">Cooking together + airport farewell</div><h3>Cooking class #2 + Gail &amp; Lyons depart</h3><div class="meta"><span>Cooking class · 12 PM</span><span>Leave for airport · ~8 PM</span><span>Flight · 12:25 AM Jan 22</span></div><p>Our second cooking class is at <b>12 PM</b>, with the afternoon free to relax and pack. Gail &amp; Lyons leave the resort for the airport at about <b>8 PM</b>. Their <b>12:25 AM flight is just after midnight on Friday, January 22</b>.</p><details class="logistics"><summary>Plan &amp; timing</summary><div class="schedule"><div class="row"><time>12:00 PM</time><div>Cooking class #2 at Sri Panwa.</div></div><div class="row"><time>Afternoon</time><div>Relax, pack and enjoy the last few hours together.</div></div><div class="row"><time>~8:00 PM</time><div>Gail &amp; Lyons leave for the airport.</div></div><div class="row"><time>12:25 AM<br/>Jan 22</time><div>Gail &amp; Lyons’ flight departs.</div></div></div></details><div class="links"><a class="button primary" href="https://www.sripanwa.com/phuket-activities/" target="_blank">Sri Panwa activities ↗</a></div></div></div></article>
 <article class="day">
 <div class="day-photo"><img alt="Pool and tropical view at Sri Panwa" src="assets/resort_pool.webp" width="1280" height="853" loading="lazy" decoding="async"/></div>
 <div class="day-copy">
 <div class="date"><div class="dow">Friday</div><div class="num">January 22</div></div>
 <div class="day-text"><div class="kicker">Leisure day</div><h3>Pool, beach, spa or resort activities</h3>
 <div class="meta"><span>No set plan</span><span>Resort activities</span><span>Family time</span></div>
-<p>Completely open — we can pick from the resort activity schedule below, book a massage, or do nothing at all.</p>
+<p>Completely open — we can pick from the resort activity schedule above, book a massage, or do nothing at all.</p>
 </div>
 </div>
 </article>
